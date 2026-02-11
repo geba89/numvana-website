@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Numvana</title>
+    <meta name="description" content="Frequently asked questions about Numvana. Learn about game modes, Focus Timer, themes, scoring, and more.">
+    <meta name="theme-color" content="#0F1923">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2B22;</text></svg>">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">NUMVANA</a>
+            <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Frequently Asked Questions</h1>
+            <p class="subtitle">Everything you need to know about Numvana</p>
+        </div>
+
+        <div class="content">
+
+            <!-- GAMEPLAY -->
+            <p class="faq-category">Gameplay</p>
+
+            <div class="faq-item">
+                <button class="faq-question">What is Numvana?</button>
+                <div class="faq-answer">
+                    <p>Numvana is a meditative number-merging puzzle game played on a hexagonal grid. Swipe in any of six directions to slide tiles across the board. When two tiles with the same number collide, they merge into one tile with double the value. The goal is to create increasingly higher-value tiles &mdash; from Morning Mist (2) all the way to Golden Dawn (2048) and beyond.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How is this different from 2048?</button>
+                <div class="faq-answer">
+                    <p>While inspired by 2048, Numvana introduces several key differences. The hexagonal grid allows six directions of movement instead of four, creating new strategic possibilities. Zen mode has no game over &mdash; the grid expands when full. Challenge mode adds a rising water mechanic instead of a simple "board full" end state. Every tile has a nature-inspired name and color, and the game includes a built-in Pomodoro focus timer.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What are the game modes?</button>
+                <div class="faq-answer">
+                    <p><strong>Zen Mode:</strong> Endless, pressure-free gameplay. No time limit, no game over. When the grid fills up, it automatically expands. Play at your own pace and see how high you can go. Score display is optional.</p>
+                    <p><strong>Challenge Mode:</strong> Water rises from the bottom of the grid every few swipes, destroying submerged tiles. Merge tiles into 128 or higher to push the water back. The game ends when water covers half the grid. Choose from three difficulty levels: Gentle, Flow, or Torrent.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What do the tile names mean?</button>
+                <div class="faq-answer">
+                    <p>Each tile value has a nature-inspired name and a unique color:</p>
+                    <p>2: Morning Mist &middot; 4: Silver Rain &middot; 8: Spring Water &middot; 16: Clear Sky &middot; 32: Forest Moss &middot; 64: Ocean Glass &middot; 128: Honey Light &middot; 256: Sunset Coral &middot; 512: Autumn Berry &middot; 1024: Twilight &middot; 2048: Golden Dawn &middot; 4096: Cherry Blossom</p>
+                    <p>The names reflect the journey from calm beginnings to radiant achievement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How does water pushback work in Challenge mode?</button>
+                <div class="faq-answer">
+                    <p>When you merge tiles into a value of 128 (Honey Light) or higher, the water level drops by one row. This earns you 50 bonus points and buys more time. Strategic high-value merges are key to surviving longer in Challenge mode.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Can I save my progress?</button>
+                <div class="faq-answer">
+                    <p>In Zen mode, your game auto-saves whenever you leave the app or navigate back to the main menu. You can resume right where you left off. In Challenge mode, games are not saved between sessions &mdash; each game is a fresh attempt, like an arcade experience.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How does scoring work?</button>
+                <div class="faq-answer">
+                    <p>Each merge earns points equal to the resulting tile value (e.g., merging two 64s into 128 earns 128 points). Bonus multipliers apply for combos: 3+ merges in one swipe earn a 1.5x bonus, and 4+ merges earn a 2.0x bonus. Milestone bonuses are awarded when you first reach 256 (+500), 512 (+1,000), 1024 (+2,000), and 2048 (+5,000) in a game. All points contribute to your lifetime score for achievements.</p>
+                </div>
+            </div>
+
+            <!-- FOCUS TIMER -->
+            <p class="faq-category">Focus Timer</p>
+
+            <div class="faq-item">
+                <button class="faq-question">What is the Focus Timer?</button>
+                <div class="faq-answer">
+                    <p>The Focus Timer is a built-in Pomodoro productivity tool. It alternates between focused work periods (where the game is locked) and break periods (where you play Zen mode as a reward). Set your work duration, break length, and number of cycles in Settings. The game becomes your incentive for staying focused.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I configure the Focus Timer?</button>
+                <div class="faq-answer">
+                    <p>Go to Settings (gear icon on the main menu) and find the "Focus Timer" section. You can customize:</p>
+                    <p><strong>Work Duration:</strong> 15, 20, 25, 30, 45, or 60 minutes (default: 25 minutes)<br>
+                    <strong>Break Duration:</strong> 5, 10, 15, or 20 minutes (default: 5 minutes)<br>
+                    <strong>Pomodoros:</strong> 1 to 8 cycles per session (default: 4)<br>
+                    <strong>Long Break:</strong> 15, 20, or 30 minutes (default: 15 minutes)</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What happens if I leave the app during a Focus Timer session?</button>
+                <div class="faq-answer">
+                    <p>The timer continues tracking time in the background. When you return, it recalibrates automatically. If a phase ended while you were away, the timer advances to the correct phase. You'll also receive a notification when work or break phases end, so you can come back at the right moment.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Can I cancel a Focus Timer session early?</button>
+                <div class="faq-answer">
+                    <p>Yes. Tap "End Session" at the bottom of the work countdown screen at any time. This cancels the remaining session and returns you to the main menu.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What is the long break?</button>
+                <div class="faq-answer">
+                    <p>After completing all pomodoros in a session, you'll see a summary screen with your stats. From there, you can choose "Take a Long Break" which gives you an extended play session (configurable from 15 to 30 minutes). This is the traditional Pomodoro technique's long break, with Numvana as the reward.</p>
+                </div>
+            </div>
+
+            <!-- THEMES & ACHIEVEMENTS -->
+            <p class="faq-category">Themes &amp; Achievements</p>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I unlock themes?</button>
+                <div class="faq-answer">
+                    <p>Themes are unlocked by reaching lifetime score milestones. Your lifetime score accumulates across all game modes and sessions. The milestones are:</p>
+                    <p><strong>1,000 pts:</strong> Dawn (warm corals)<br>
+                    <strong>5,000 pts:</strong> Forest (deep greens)<br>
+                    <strong>15,000 pts:</strong> Ocean (bright blues)<br>
+                    <strong>50,000 pts:</strong> Night (twilight purples)</p>
+                    <p>No purchase required. Just keep playing.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What are the achievements?</button>
+                <div class="faq-answer">
+                    <p>Five achievement tiers track your lifetime score progress:</p>
+                    <p><strong>First Steps</strong> (1K) &middot; <strong>Finding Flow</strong> (5K) &middot; <strong>Deep Focus</strong> (15K) &middot; <strong>Inner Peace</strong> (50K) &middot; <strong>Enlightened</strong> (100K)</p>
+                    <p>Each achievement except the last unlocks a premium visual theme. The final achievement, Enlightened, removes all interstitial ads permanently.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Can I buy themes or remove ads with a purchase?</button>
+                <div class="faq-answer">
+                    <p>No. Numvana has no in-app purchases. All themes are earned through gameplay, and the "Enlightened" achievement at 100,000 lifetime points removes interstitial ads permanently. This is a deliberate design choice &mdash; we believe rewards should be earned, not bought.</p>
+                </div>
+            </div>
+
+            <!-- ADS & PRIVACY -->
+            <p class="faq-category">Ads &amp; Privacy</p>
+
+            <div class="faq-item">
+                <button class="faq-question">Does Numvana have ads?</button>
+                <div class="faq-answer">
+                    <p>Yes, Numvana is free and supported by non-intrusive interstitial ads shown between game sessions (never during gameplay). Ads are rate-limited: a maximum of one every 4 minutes, with a daily cap of 4 ads. Your first few sessions are completely ad-free. Reaching the "Enlightened" achievement (100K lifetime score) removes all interstitial ads permanently.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What data does Numvana collect?</button>
+                <div class="faq-answer">
+                    <p>Numvana itself does not collect any personal data. All your game data (scores, settings, achievements, saved games) stays on your device and is never sent to any server. Google AdMob, which provides advertisements, may collect device identifiers and ad interaction data as described in our <a href="privacy.html">Privacy Policy</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Does Numvana work offline?</button>
+                <div class="faq-answer">
+                    <p>Yes. All gameplay features work fully offline. The only feature that requires an internet connection is loading advertisements. Without connectivity, ads simply won't appear and the game functions normally.</p>
+                </div>
+            </div>
+
+            <!-- TECHNICAL -->
+            <p class="faq-category">Technical</p>
+
+            <div class="faq-item">
+                <button class="faq-question">What devices are supported?</button>
+                <div class="faq-answer">
+                    <p>Numvana requires iOS 17.0 or later and runs on iPhone and iPad in portrait orientation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I reset my progress?</button>
+                <div class="faq-answer">
+                    <p>Deleting and reinstalling the app will reset all data, including scores, achievements, theme unlocks, and settings. There is no in-app reset button, as this protects against accidental progress loss.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Does Numvana sync across devices?</button>
+                <div class="faq-answer">
+                    <p>Currently, Numvana stores all data locally on your device. Cross-device sync (via iCloud) is not available in version 1.0 but may be added in a future update.</p>
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <p class="faq-category">Support</p>
+
+            <div class="faq-item">
+                <button class="faq-question">I found a bug. How do I report it?</button>
+                <div class="faq-answer">
+                    <p>Please email us at <a href="mailto:numvana.app@gmail.com">numvana.app@gmail.com</a> with a description of the issue, your device model, and iOS version. Screenshots or screen recordings are very helpful. We read every report and appreciate your help in making Numvana better.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I contact the developer?</button>
+                <div class="faq-answer">
+                    <p>You can reach us at <a href="mailto:numvana.app@gmail.com">numvana.app@gmail.com</a> for any questions, feedback, or support requests. We'd love to hear from you.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Numvana. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ accordion toggle
+        document.querySelectorAll('.faq-question').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var item = this.parentElement;
+                var isOpen = item.classList.contains('open');
+                // Close all other items
+                document.querySelectorAll('.faq-item.open').forEach(function(openItem) {
+                    openItem.classList.remove('open');
+                });
+                // Toggle current item
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
