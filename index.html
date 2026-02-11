@@ -19,51 +19,268 @@
             <a href="index.html" class="nav-brand">NUMVANA</a>
             <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
             <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="support.html">Support</a></li>
                 <li><a href="privacy.html">Privacy</a></li>
                 <li><a href="terms.html">Terms</a></li>
-                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Hero -->
     <section class="hero">
         <span class="hero-icon">&#x2B22;</span>
         <h1>Numvana</h1>
-        <p>A meditative number puzzle on a hexagonal grid. Two game modes, nature-inspired tiles, and a built-in focus timer. Free on iOS.</p>
+        <p class="hero-tagline">A meditative number puzzle on a hexagonal grid</p>
+        <p class="hero-sub">Merge nature-inspired tiles, find your flow, and stay focused with a built-in Pomodoro timer. Free on iOS.</p>
+        <div class="hero-cta">
+            <a href="#" class="btn btn-primary" id="appStoreLink">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Download on the App Store
+            </a>
+        </div>
     </section>
 
     <main class="container">
-        <div class="cards">
-            <a href="privacy.html" class="card">
-                <div class="card-icon green">&#x1F6E1;</div>
-                <div class="card-text">
-                    <h3>Privacy Policy</h3>
-                    <p>How we handle your data (spoiler: we don't collect any).</p>
-                </div>
-                <span class="card-arrow">&rsaquo;</span>
-            </a>
-            <a href="terms.html" class="card">
-                <div class="card-icon blue">&#x1F4DC;</div>
-                <div class="card-text">
-                    <h3>Terms of Use</h3>
-                    <p>The agreement for using Numvana.</p>
-                </div>
-                <span class="card-arrow">&rsaquo;</span>
-            </a>
-            <a href="faq.html" class="card">
-                <div class="card-icon gold">&#x2753;</div>
-                <div class="card-text">
-                    <h3>FAQ</h3>
-                    <p>Common questions about gameplay, features, and support.</p>
-                </div>
-                <span class="card-arrow">&rsaquo;</span>
-            </a>
-        </div>
 
-        <div class="highlight-box" style="text-align: center; margin-top: 48px;">
-            <p style="font-size: 14px;"><strong>Numvana is free on the App Store</strong></p>
-            <p style="font-size: 13px;">Merge tiles from Morning Mist to Golden Dawn. Find your calm.</p>
-        </div>
+        <!-- Features -->
+        <section class="section" id="features">
+            <h2 class="section-title">Why Numvana?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: rgba(85, 239, 196, 0.12); color: var(--accent-cyan);">&#x2B22;</div>
+                    <h3>Hex Grid</h3>
+                    <p>Six directions of movement on a pointy-top hexagonal board. 37 cells that expand to 91 in Zen mode.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: rgba(116, 185, 255, 0.12); color: var(--accent-blue);">&#x1F30A;</div>
+                    <h3>Two Game Modes</h3>
+                    <p>Zen for endless, pressure-free play. Challenge with rising water and three difficulty levels.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: rgba(253, 203, 110, 0.12); color: var(--accent-gold);">&#x23F2;</div>
+                    <h3>Focus Timer</h3>
+                    <p>Built-in Pomodoro timer. Work hard, then play Numvana as your break reward. Fully configurable.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: rgba(162, 155, 254, 0.12); color: var(--accent-purple);">&#x1F3A8;</div>
+                    <h3>Unlockable Themes</h3>
+                    <p>Earn Dawn, Forest, Ocean, and Night themes through gameplay. No purchases, ever.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: rgba(253, 121, 168, 0.12); color: var(--accent-pink);">&#x1F343;</div>
+                    <h3>Nature-Inspired Tiles</h3>
+                    <p>Morning Mist, Silver Rain, Forest Moss, Golden Dawn &mdash; every tile tells a story.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: rgba(0, 184, 148, 0.12); color: var(--accent-green);">&#x1F50A;</div>
+                    <h3>Ambient Soundscape</h3>
+                    <p>Calming audio that responds to your gameplay. Unique merge sounds for each tile value.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tile showcase -->
+        <section class="section">
+            <h2 class="section-title">The Journey</h2>
+            <p class="section-subtitle">Merge tiles from calm beginnings to radiant achievement</p>
+            <div class="tile-journey">
+                <div class="tile-step" style="--tile-color: #B0BEC5;">
+                    <div class="tile-hex">2</div>
+                    <span>Morning Mist</span>
+                </div>
+                <div class="tile-arrow">&rarr;</div>
+                <div class="tile-step" style="--tile-color: #90A4AE;">
+                    <div class="tile-hex">4</div>
+                    <span>Silver Rain</span>
+                </div>
+                <div class="tile-arrow">&rarr;</div>
+                <div class="tile-step" style="--tile-color: #81D4FA;">
+                    <div class="tile-hex">8</div>
+                    <span>Spring Water</span>
+                </div>
+                <div class="tile-arrow">&rarr;</div>
+                <div class="tile-step" style="--tile-color: #74B9FF;">
+                    <div class="tile-hex">16</div>
+                    <span>Clear Sky</span>
+                </div>
+                <div class="tile-arrow">&rarr;</div>
+                <div class="tile-step" style="--tile-color: #55EFC4;">
+                    <div class="tile-hex">32</div>
+                    <span>Forest Moss</span>
+                </div>
+                <div class="tile-arrow">&rarr;</div>
+                <div class="tile-step" style="--tile-color: #00B894;">
+                    <div class="tile-hex">64</div>
+                    <span>Ocean Glass</span>
+                </div>
+                <div class="tile-arrow">&rarr;</div>
+                <div class="tile-step" style="--tile-color: #FDCB6E;">
+                    <div class="tile-hex">128</div>
+                    <span>Honey Light</span>
+                </div>
+                <div class="tile-arrow">&rarr;</div>
+                <div class="tile-step" style="--tile-color: #E17055;">
+                    <div class="tile-hex">256</div>
+                    <span>Sunset Coral</span>
+                </div>
+                <div class="tile-arrow">&rarr;</div>
+                <div class="tile-step" style="--tile-color: #FD79A8;">
+                    <div class="tile-hex">512</div>
+                    <span>Autumn Berry</span>
+                </div>
+                <div class="tile-arrow">&rarr;</div>
+                <div class="tile-step" style="--tile-color: #A29BFE;">
+                    <div class="tile-hex">1024</div>
+                    <span>Twilight</span>
+                </div>
+                <div class="tile-arrow">&rarr;</div>
+                <div class="tile-step tile-step-highlight" style="--tile-color: #F9CA24;">
+                    <div class="tile-hex">2048</div>
+                    <span>Golden Dawn</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game modes detail -->
+        <section class="section">
+            <h2 class="section-title">Game Modes</h2>
+            <div class="modes-grid">
+                <div class="mode-card">
+                    <div class="mode-badge zen">ZEN</div>
+                    <h3>Endless & Peaceful</h3>
+                    <ul>
+                        <li>No time limit, no game over</li>
+                        <li>Grid expands when full (37 &rarr; 61 &rarr; 91 cells)</li>
+                        <li>Optional score display</li>
+                        <li>Auto-saves your progress</li>
+                    </ul>
+                </div>
+                <div class="mode-card">
+                    <div class="mode-badge challenge">CHALLENGE</div>
+                    <h3>Rising Tide</h3>
+                    <ul>
+                        <li>Water rises every few swipes</li>
+                        <li>Merge 128+ to push water back</li>
+                        <li>50% water coverage = game over</li>
+                        <li>Three difficulties: Gentle, Flow, Torrent</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Focus Timer -->
+        <section class="section">
+            <h2 class="section-title">Built-in Focus Timer</h2>
+            <p class="section-subtitle">The Pomodoro technique, gamified</p>
+            <div class="timer-flow">
+                <div class="timer-step">
+                    <div class="timer-icon">&#x1F4BB;</div>
+                    <strong>Work</strong>
+                    <span>15–60 min</span>
+                </div>
+                <div class="timer-arrow">&rarr;</div>
+                <div class="timer-step">
+                    <div class="timer-icon">&#x1F3AE;</div>
+                    <strong>Play</strong>
+                    <span>5–20 min break</span>
+                </div>
+                <div class="timer-arrow">&rarr;</div>
+                <div class="timer-step">
+                    <div class="timer-icon">&#x1F504;</div>
+                    <strong>Repeat</strong>
+                    <span>1–8 cycles</span>
+                </div>
+                <div class="timer-arrow">&rarr;</div>
+                <div class="timer-step">
+                    <div class="timer-icon">&#x1F31F;</div>
+                    <strong>Long Break</strong>
+                    <span>15–30 min reward</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="section">
+            <h2 class="section-title">Achievements</h2>
+            <p class="section-subtitle">Unlock themes and remove ads through gameplay alone</p>
+            <div class="achievements-list">
+                <div class="achievement">
+                    <div class="achievement-icon" style="background: rgba(85, 239, 196, 0.12);">&#x1F331;</div>
+                    <div class="achievement-info">
+                        <strong>First Steps</strong>
+                        <span>1,000 lifetime points</span>
+                    </div>
+                    <div class="achievement-reward">Dawn theme</div>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-icon" style="background: rgba(0, 184, 148, 0.12);">&#x1F332;</div>
+                    <div class="achievement-info">
+                        <strong>Finding Flow</strong>
+                        <span>5,000 lifetime points</span>
+                    </div>
+                    <div class="achievement-reward">Forest theme</div>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-icon" style="background: rgba(116, 185, 255, 0.12);">&#x1F30A;</div>
+                    <div class="achievement-info">
+                        <strong>Deep Focus</strong>
+                        <span>15,000 lifetime points</span>
+                    </div>
+                    <div class="achievement-reward">Ocean theme</div>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-icon" style="background: rgba(162, 155, 254, 0.12);">&#x1F303;</div>
+                    <div class="achievement-info">
+                        <strong>Inner Peace</strong>
+                        <span>50,000 lifetime points</span>
+                    </div>
+                    <div class="achievement-reward">Night theme</div>
+                </div>
+                <div class="achievement achievement-highlight">
+                    <div class="achievement-icon" style="background: rgba(253, 203, 110, 0.15);">&#x2728;</div>
+                    <div class="achievement-info">
+                        <strong>Enlightened</strong>
+                        <span>100,000 lifetime points</span>
+                    </div>
+                    <div class="achievement-reward">No more ads</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section">
+            <h2>Find your calm</h2>
+            <p>Numvana is free with no in-app purchases. All themes and features are earned through play.</p>
+            <a href="#" class="btn btn-primary" id="appStoreLink2">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Download on the App Store
+            </a>
+        </section>
+
+        <!-- Quick links -->
+        <section class="section">
+            <div class="quick-links">
+                <a href="faq.html" class="card">
+                    <div class="card-icon gold">&#x2753;</div>
+                    <div class="card-text">
+                        <h3>FAQ</h3>
+                        <p>Common questions about gameplay, features, and support.</p>
+                    </div>
+                    <span class="card-arrow">&rsaquo;</span>
+                </a>
+                <a href="support.html" class="card">
+                    <div class="card-icon blue">&#x1F4E7;</div>
+                    <div class="card-text">
+                        <h3>Support</h3>
+                        <p>Bug reports, feedback, and contact information.</p>
+                    </div>
+                    <span class="card-arrow">&rsaquo;</span>
+                </a>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -73,6 +290,8 @@
                 <li><a href="privacy.html">Privacy</a></li>
                 <li><a href="terms.html">Terms</a></li>
                 <li><a href="faq.html">FAQ</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="mailto:piotr@gebski.cloud">Contact</a></li>
             </ul>
         </div>
     </footer>
