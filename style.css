@@ -372,6 +372,24 @@ body {
     font-weight: bold;
 }
 
+.section-note {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.section-note a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(116, 185, 255, 0.3);
+    transition: border-color 0.2s;
+}
+
+.section-note a:hover {
+    border-color: var(--accent-blue);
+}
+
 /* Timer flow */
 .timer-flow {
     display: flex;
